@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2b2d42">
+  <title>Para Paula ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">UN PEQUEÑO DETALLE PARA TI</p>
+
+        <div class="heart-symbol">♥</div>
+
+        <h1>Para <span>Paula</span></h1>
+
+        <p class="intro">
+          Hay regalos que se pueden envolver,<br>
+          y otros que simplemente se sienten.
+        </p>
+
+        <button class="open-btn" id="openGift">
+          <span>Descubrir mi regalo</span>
+          <span class="arrow">↓</span>
+        </button>
+
+        <p class="hint">Haz clic para abrirlo</p>
+      </div>
+
+      <div class="scroll-line"></div>
+    </section>
+
+    <!-- REGALO -->
+    <section class="gift-section" id="regalo">
+      <div class="section-label">TU REGALO</div>
+
+      <div class="gift-layout">
+        <div class="card-area">
+          <div class="sparkle sparkle-1">✦</div>
+          <div class="sparkle sparkle-2">✦</div>
+          <div class="sparkle sparkle-3">✧</div>
+
+          <div class="gift-card" id="giftCard">
+            <div class="card-front">
+              <div class="card-shine"></div>
+              <img src="assets/tarjeta-hm.png" alt="Tarjeta de regalo H&M">
+            </div>
+
+            <div class="card-back">
+              <div class="back-inner">
+                <span class="back-small">PARA PAULA</span>
+                <strong>$100.000</strong>
+                <span>Un poquito de moda para ti ♥</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="flip-btn" id="flipCard">Girar tarjeta ↻</button>
+        </div>
+
+        <div class="gift-copy">
+          <p class="mini-title">PARA QUE TE CONSIENTAS</p>
+          <h2>Un regalo para<br><em>elegir lo que quieras.</em></h2>
+
+          <div class="value">
+            <span class="currency">$</span>
+            <span class="amount">100.000</span>
+            <span class="cop">COP</span>
+          </div>
+
+          <p class="description">
+            Esta tarjeta de regalo es válida para compras de ropa en
+            <strong>H&M</strong>. La idea es que elijas algo que te guste,
+            algo que te haga sentir tan bonita como yo te veo.
+          </p>
+
+          <div class="divider"></div>
+
+          <p class="little-note">
+            Porque sí, es un regalo... pero también es una excusa
+            para verte sonreír. ❤️
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVITACIÓN -->
+    <section class="date-section" id="cita">
+      <div class="date-decoration">♥</div>
+      <p class="section-label">Y HAY ALGO MÁS...</p>
+
+      <h2>Tengo una invitación<br><em>para ti.</em></h2>
+
+      <div class="invitation">
+        <div class="invitation-top">
+          <span>INVITACIÓN ESPECIAL</span>
+          <span>01</span>
+        </div>
+
+        <div class="invitation-body">
+          <p class="date-word">SÁBADO</p>
+          <h3>Una cita conmigo</h3>
+
+          <div class="invitation-line"></div>
+
+          <p>
+            Este sábado quiero llevarte a una cita.
+            Sin excusas, sin afán, solo tú y yo,
+            disfrutando de un día juntos.
+          </p>
+
+          <div class="date-details">
+            <div>
+              <span class="detail-icon">♥</span>
+              <span>Contigo</span>
+            </div>
+            <div>
+              <span class="detail-icon">✦</span>
+              <span>Este sábado</span>
+            </div>
+            <div>
+              <span class="detail-icon">♡</span>
+              <span>Una sorpresa</span>
+            </div>
+          </div>
+
+          <p class="dress-code">Dress code: <strong>ser tú misma.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section">
+      <div class="final-heart">♥</div>
+      <p>Y si todavía no estaba claro...</p>
+      <h2>Quiero pasar<br><em>el sábado contigo.</em></h2>
+      <p class="final-note">
+        El regalo es para ti.<br>
+        La cita es para los dos.
+      </p>
+
+      <button class="yes-btn" id="yesBtn">Acepto la invitación ♥</button>
+      <p class="footer-love">Hecho con mucho amor para Paula.</p>
+    </section>
+  </main>
+
+  <div class="modal" id="loveModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close-modal" id="closeModal">×</button>
+      <div class="modal-heart">♥</div>
+      <p class="modal-small">CITA CONFIRMADA</p>
+      <h2>Entonces...</h2>
+      <p>Este sábado queda oficialmente reservado para nosotros. ❤️</p>
+      <button class="modal-btn" id="closeModal2">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
